@@ -1,6 +1,10 @@
 <template>
  <div>
-   <MyButton> </MyButton>
+   <Custom-Button :href="href">
+   <slot name="slot1">
+
+   </slot>
+   </Custom-Button>
    <ParentComponent></ParentComponent>
  </div>
 </template>
@@ -13,7 +17,7 @@ export default {
 
   data() {
      return {
-
+       href :' abc'
      }
  },
 }
