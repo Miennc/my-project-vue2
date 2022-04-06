@@ -1,25 +1,20 @@
 <template>
- <div>
-   <Custom-Button :href="href">
-   <slot name="slot1">
-
-   </slot>
-   </Custom-Button>
-   <ParentComponent></ParentComponent>
- </div>
+  <div>
+   <ProductDetails></ProductDetails>
+  </div>
 </template>
-<script>
-import ParentComponent from "@/components/ParentComponent";
-export default {
-  components: {
-    ParentComponent
-  },
 
-  data() {
-     return {
-       href :' abc'
-     }
- },
+<script >
+import ProductDetails from "@/components/ProductDetails";
+export default  {
+  data(){
+    return {
+
+    }
+  },
+  components: {
+    ProductDetails
+  },
 }
 </script>
 
